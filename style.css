@@ -139,6 +139,9 @@ a:focus {
     /*border: 1px #000 solid;*/
     font-family: 'Raleway', sans-serif;
   }
+  a {
+    font-weight: bold;
+  }
   .filkom-grid {
     max-width: 1920px;
     margin-left: 8.33%;
@@ -176,6 +179,11 @@ a:focus {
     padding: 24px;
     box-shadow: 1px 0 10px gray;
   }
+
+  .topnav * {
+    padding: 0 !important;
+  }
+
   span#logo {
     font-size: 34px;
     font-weight: 900;
@@ -219,10 +227,6 @@ a:focus {
     padding-top: 10px;
     font-weight: bold;
     font-size: 19px;
-  }
-
-  .topnav * {
-    padding: 0 !important;
   }
 
   .search-top {
