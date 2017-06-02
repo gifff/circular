@@ -1,3 +1,6 @@
+  .container {
+    padding-top: 100px;
+  }
   a {
       background-color: transparent;
       color: #337ab7;
@@ -142,11 +145,11 @@ a:focus {
   a {
     font-weight: bold;
   }
-  .filkom-grid {
+  /*.filkom-grid {
     max-width: 1920px;
-    margin-left: 8.33%;
+    /*margin-left: 8.33%;* /
     margin-top: 100px;
-  }
+  }*/
   ul.nav {
     list-style: none;
     list-style-type: none;
@@ -191,7 +194,7 @@ a:focus {
   }
   .left-nav {
     box-shadow: 1px 0 10px grey;
-    width: 220px;
+    /*width: 220px;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -248,3 +251,55 @@ a:focus {
   .search-top input[type="text"]::placeholder {
     color: #D1D1D1;
   }
+
+.player-container {
+	background-color: black;
+	float: left;
+	margin: 20px 20px 10px 0;
+	width: 500px;
+}
+
+.player-minimize .player-position {
+	background-color: white;
+	border-radius: 2px;
+	bottom: 20px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+	right: 20px;
+	padding: 7px;
+	position: fixed;
+	width: 300px;
+	z-index: 1;
+}
+
+/*
+overrides for developer site defaults (for presentation only, non-demo styles)
+*/
+
+.demo-single .demo-layout-content .jwplayer {
+	margin: 0;
+}
+
+.demo-layout-content {
+	text-align: left;
+}
+
+.demo-single .demo-layout-content h1 {
+	font-size: 56px;
+	font-weight: 500;
+}
+
+.demo-single .demo-layout-content h2 {
+	font-size: 32px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+.demo-single .demo-layout-content p,
+.demo-single .demo-layout-content p + p {
+	margin-top: 20px;
+}
+
+.demo-single .demo-layout-vertical .demo-layout-code {
+	max-width: 900px;
+	/*width: 100%;*/
+}
