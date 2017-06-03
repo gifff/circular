@@ -8,7 +8,7 @@ body {
 
 .filkom-grid {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
 
 	
@@ -24,6 +24,7 @@ body {
 [class*='column-'] {
 	float: left;
 	padding: 12px;
+	width: 100%;
 }
 
 @media (min-width: 400px) {

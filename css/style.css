@@ -167,9 +167,13 @@ a:focus {
     color: #038EFB;
     text-decoration: none;
   }
+  ul.nav a:active{
+    color: #038EFB;
+  }
   div.feed {
     margin: 10px 5px;
     padding: 10px 5px;
+    text-align: justify;
   }
   div.topnav {
     background-color: #038EFB;
@@ -187,35 +191,12 @@ a:focus {
     padding: 0 !important;
   }
 
-  span#logo {
+  #logo {
     font-size: 34px;
     font-weight: 900;
     color: white;
   }
-  .left-nav {
-    box-shadow: 1px 0 10px grey;
-    /*width: 220px;*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    padding-top: 104px;
 
-    background: white;
-    
-  }
-  .left-nav .bottom {
-    position: absolute;
-    /*display: inline-block;*/
-    color: #f0f0f0;
-    bottom: 0;
-    left: 0;
-    height: 30%;
-    max-height: 326px;
-    background-color: #222222;
-    width: 100%;
-    text-align: center;
-  }
   .profile {
     text-align: center;
     box-sizing: border-box;
@@ -256,7 +237,7 @@ a:focus {
 	background-color: black;
 	float: left;
 	margin: 20px 20px 10px 0;
-	width: 500px;
+	width: 100%;
 }
 
 .player-minimize .player-position {
@@ -302,4 +283,72 @@ overrides for developer site defaults (for presentation only, non-demo styles)
 .demo-single .demo-layout-vertical .demo-layout-code {
 	max-width: 900px;
 	/*width: 100%;*/
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    display: none;
+    background-color: #038EFB;
+    color: white;
+    border: 2px solid #038EFB;
+    border-radius: 4px;
+    padding: 6px 5px !important;
+    align-items: flex-start !important;
+    text-align: center;
+    justify-content: center !important;
+}
+
+.button:hover {
+    background-color: #03AEFB;
+    color: white;
+}
+
+  .left-nav {
+    box-shadow: 1px 0 10px grey;
+    /*width: 220px;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 104px;
+    display: block;
+    background: white;
+    
+  }
+
+  .icon-bar {
+    display: block;
+    background-color: #fff;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 5px;
+  }
+
+/*Untuk ukuran kurang dari 768px/column-medium*/
+@media screen and (max-width:768px) {
+  .left-nav {display: none;}
+  .search-top {display: none;}
+  .column-offset-3 {
+    margin-left: 0%;
+  }
+  #logo {
+    font-size: 28px;
+  }
+  .button{
+    display: block;
+  }
+}
+.show {
+  display: block;
+}
+/*Untuk ukuran font left-nav*/
+@media screen and (max-width:1024px){
+  ul.nav li {font-size: 15px;}
 }

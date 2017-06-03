@@ -5,26 +5,40 @@
         <title>Circular</title>
         <link rel="stylesheet" href="css/filkom-grid.css" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900" rel="stylesheet">
-        
+        <script>
+            function toggleClass(id, name) {
+                const tag = document.getElementById(id);
+                if(tag.classList.contains(name))
+                    tag.classList.remove(name);
+                else
+                    tag.classList.add(name);          
+            }
+        </script>
     </head>
     <body>
         <div class="filkom-grid container">
             <div class="topnav">
                 <div class="row">
-                    <div class="logo column-large-2 column-medium-2">
+                    <div class="logo column-large-2 column-medium-2 column-small-2">
                         <span id="logo">
                         CIRCULAR
                         </span>
                     </div>
-                    <div class="column-large-4 column-medium-4 column-offset-2">
+                    <div class="column-large-4 column-medium-4 column-small-4 column-offset-2">
                         <div class="search-top">
                             <input type="text" name="search" placeholder="Search on Circle..." >
                         </div>
                     </div>
+                    <div class="column-large-1 column-medium-1 column-small-1 column-offset-9">
+                        <a class="button" onclick="toggleClass('left-nav', 'show');">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="left-nav column-large-2">
+            <div id="left-nav" class="left-nav column-large-2 column-medium-2 column-small-12">
                 <div class="row">
                     <div class="profile">
                         <img src="picture/img.jpg">
@@ -33,18 +47,17 @@
                             Octocat
                         </div>
                     </div>
-                    <ul class="nav">
-                        <li><a href="home.html">Dashboard</a></li>
+                    <div class="filkom-grid">
+                    <ul class="nav column-large-2 column-medium-2 column-small-2">
+                        <li class="active"><a href="home.html">Dashboard</a></li>
                         <li><a href="movies.html">Movies</a></li>
-                        <li><a href="#">Music</a></li>
+                        <li><a href="music.html">Music</a></li>
                         <li><a href="#">Settings</a></li>
                     </ul>
-                </div>
-                <div class="bottom">
-                Player goes here
+                    </div>
                 </div>
             </div>
-            <div class="column-large-4 column-medium-4 column-offset-3">
+            <div class="column-large-7 column-medium-7 column-small-12 column-offset-3">
                 <div class="row">
                     <div class="feed">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt turpis ac lacus vehicula facilisis. Duis gravida, est ut fermentum vehicula, augue ipsum pharetra sem, ac faucibus justo purus at metus. Vestibulum condimentum, tellus in ornare dictum, felis ligula pellentesque tortor, sit amet faucibus diam nunc ac ante. Etiam ac risus tempor, tempor augue ac, lacinia ex. Aenean consectetur elit sed justo rhoncus congue sed non augue. Nam ultricies id ligula eu pulvinar. Integer rhoncus ac libero eu dictum. Donec pellentesque pharetra nisi a pulvinar. Suspendisse hendrerit lobortis risus, sollicitudin porta nunc vestibulum vitae. Quisque ac libero at quam fringilla finibus a ac risus. Fusce nec tincidunt metus, quis elementum lorem.

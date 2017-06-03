@@ -51,8 +51,8 @@
                     <div class="filkom-grid">
                     <ul class="nav column-large-2 column-medium-2 column-small-2">
                         <li><a href="home.html">Dashboard</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="music.html">Music</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="#">Music</a></li>
                         <li><a href="#">Settings</a></li>
                     </ul>
                     </div>
@@ -62,16 +62,16 @@
                 <div class="row">
                     <div class="column-large-6 column-medium-6 column-small-12">
                         <div class="row">
-                            <h1>GUARDIAN OF GALAXY VOL. 2</h1>
-                            The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.
+                            <h1>AVENGED SEVENFOLD</h1>
+                            <h2>DEAR GOD</h2>
                         </div>
                         <br>
                         <div class="row">
-                            <a href="#">VIEW MORE INFORMATION</a>
+                            <a href="#">VIEW ALBUMS</a>
                         </div>
                     </div>
-                    <div class="column-large-5 column-medium-5 column-small-12">
-                        <img class="img-responsive" src="picture/gotgv2.png">
+                    <div id="imageData" class="column-large-5 column-medium-5 column-small-12">
+                        <img class="img-responsive" src="picture/Front.jpg">
                     </div>
                 </div>
 
@@ -154,7 +154,7 @@ function getScrollTop() {
 // configure jwplayer instance
 playerInstance.setup({
   autostart: false,
-  file: 'media/guardian.mp4',
+  file: 'media/lagu.mp3',
   primary: 'html5',
   setFullscreen: true,
 //   width: '100%'
@@ -212,6 +212,14 @@ playerInstance.on('ready', function() {
         };
 
     });
+    // let imageDataHTML = document.getElementById('imageData');
+    // jwplayer().on('meta', function(event) {
+    //     // let thisImageData = event.metadata.url;
+    //     console.log('onMeta():', event.metadata);
+
+    //     if(thisImageData)
+    //         imageDataHTML.innerHTML = '<img src="'+thisImageData+'"/>';
+    // })
 </script>
     </body>
 </html>
