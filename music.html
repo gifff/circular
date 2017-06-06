@@ -76,7 +76,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="column-large-11">
+                    <div class="column-large-4">
                         <div class="player-container">
                             <div class="player-position">
                                 <div id="player"></div>
@@ -131,7 +131,7 @@
 
 // initialize jwplayer
 var playerInstance = jwplayer('player');
-
+var medialink = 'media/whothatbe.m4a';
 // player dom elements
 var playerContainerEl = document.querySelector('.player-container');
 
@@ -154,12 +154,17 @@ function getScrollTop() {
 // configure jwplayer instance
 playerInstance.setup({
   autostart: false,
-  file: 'media/lagu.mp3',
+  file: medialink,
   primary: 'html5',
   image: 'picture/front.jpg',
   setFullscreen: true,
-  width:'50%',
-  aspectratio: "5:5"
+  aspectratio: "5:5",
+  skin: {
+  name: "roundster",
+  active: "red",
+       inactive: "white",
+       background: "black"
+  }
 
 //   width: '100%'
 });
