@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/filkom-grid.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="shortcut icon" href="/media/logo.png">
         <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900" rel="stylesheet">
         <script>
             function toggleClass(id, name) {
@@ -42,15 +43,15 @@
             <div id="left-nav" class="left-nav column-large-2 column-medium-2 column-small-12">
                 <div class="row">
                     <div class="profile">
-                        <img src="media/profile.jpg">
+                        <img src="picture/img.jpg">
                         <br>
                         <div class="display-name">
-                            Agastya Darma
+                            Octocat
                         </div>
                     </div>
                     <div class="filkom-grid">
                     <ul class="nav column-large-2 column-medium-2 column-small-2">
-                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="home.html">Dashboard</a></li>
                         <li><a href="#">Movies</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="#">Settings</a></li>
@@ -59,9 +60,24 @@
                 </div>
             </div>
             <div class="column-large-9 column-medium-9 column-small-12 column-offset-3">
-                
                 <div class="row">
-                    <div class="column-large-8">
+                    <div class="column-large-6 column-medium-6 column-small-12">
+                        <div class="row">
+                            <h1>Dr. Strange</h1>
+                            While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.
+                        </div>
+                        <br>
+                        <div class="row">
+                            <a href="#">VIEW MORE INFORMATION</a>
+                        </div>
+                    </div>
+                    <div class="column-large-5 column-medium-5 column-small-12">
+                        <img class="img-responsive" src="media/doctor-strange2.png">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-large-11">
                         <div class="player-container">
                             <div class="player-position">
                                 <div id="player"></div>
@@ -139,18 +155,12 @@ function getScrollTop() {
 // configure jwplayer instance
 playerInstance.setup({
   autostart: false,
-  file: 'media/drs.mp4',
+  file: 'media/guardian.mp4',
   primary: 'html5',
   setFullscreen: true,
   skin: {
   name: "roundster"
-  },
-   tracks: [{ 
-            file: "media/drs.srt", 
-            label: "Indonesian",
-            kind: "captions",
-            "default": true 
-        }]
+  }
 //   width: '100%'
 });
 
@@ -168,7 +178,7 @@ playerInstance.on('ready', function() {
         // this prevents container from disappearing and changing element positions
         // on page when player becomes minimized. this also leaves a nice visual
         // placeholder space for minimized player to return to when appropriate
-        playerContainerEl.style.height = playerHeight + 'px';
+        // playerContainerEl.style.height = playerHeight + 'px';
 
         // below we handle window scroll event without killing performance
         // this is a minimal approach. please consider implementing something more extensive:

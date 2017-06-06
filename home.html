@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/filkom-grid.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/media/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900" rel="stylesheet">
     <script>
         function toggleClass(id, name) {
@@ -233,7 +234,7 @@ playerInstance.on('ready', function() {
         // this prevents container from disappearing and changing element positions
         // on page when player becomes minimized. this also leaves a nice visual
         // placeholder space for minimized player to return to when appropriate
-        // playerContainerEl.style.height = playerHeight + 'px';
+        playerContainerEl.style.height = playerHeight + 'px';
 
         // below we handle window scroll event without killing performance
         // this is a minimal approach. please consider implementing something more extensive:
