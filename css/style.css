@@ -494,6 +494,9 @@ hr.style-four {
       margin: 20px 20px 10px 0;
       width: 100%;
   }
+  .player-minimize {
+      z-index: 98 !important;
+  }
   .player-minimize .player-position {
       background-color: white;
       border-radius: 2px;
@@ -503,13 +506,10 @@ hr.style-four {
       padding: 7px;
       position: fixed;
       width: 300px;
-      z-index: 99;
-      
-      /*z-index: 1000;*/
   }
     #player, .player-container{
-          border-radius: 10px;
-      z-index: 99;
+        border-radius: 10px;
+      
           
   }
   /*
