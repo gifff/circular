@@ -51,7 +51,7 @@
                     </div>
                     <div class="filkom-grid">
                     <ul class="nav column-large-2 column-medium-2 column-small-2">
-                        <li><a href="home.html">Dashboard</a></li>
+                        <li><a href="index.html">Dashboard</a></li>
                         <li><a href="#">Movies</a></li>
                         <li><a href="music.html">Music</a></li>
                         <li><a href="#">Settings</a></li>
@@ -178,7 +178,7 @@ playerInstance.on('ready', function() {
         // this prevents container from disappearing and changing element positions
         // on page when player becomes minimized. this also leaves a nice visual
         // placeholder space for minimized player to return to when appropriate
-        // playerContainerEl.style.height = playerHeight + 'px';
+        playerContainerEl.style.height = playerHeight + 'px';
 
         // below we handle window scroll event without killing performance
         // this is a minimal approach. please consider implementing something more extensive:
