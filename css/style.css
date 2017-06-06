@@ -390,7 +390,7 @@
           position: relative;
   }
 .mediaContainer {
-    z-index: 56;
+    /*z-index: 56;*/
     position: relative;
 }
 
@@ -398,7 +398,7 @@ hr.style-four {
    border-top: 1.5px solid #EBEBEB;
 }
 .commentContainer {
-    z-index: 50;
+    z-index: -1;
     padding: 30px 10px 10px 10px;
     position: relative;
     border-radius: 10px;
@@ -486,7 +486,7 @@ hr.style-four {
       float: left;
       margin: 20px 20px 10px 0;
       width: 100%;
-      z-index: 99;
+      z-index: 95;
   }
   .player-container2 {
       background-color: black;
@@ -495,7 +495,7 @@ hr.style-four {
       width: 100%;
   }
   .player-minimize {
-      z-index: 98;
+      z-index: 95;
   }
   .player-minimize .player-position {
       background-color: white;
@@ -506,13 +506,13 @@ hr.style-four {
       padding: 7px;
       position: fixed;
       width: 300px;
-      z-index: 99;
+      z-index: 95;
       
       /*z-index: 1000;*/
   }
     #player, .player-container{
           border-radius: 10px;
-      z-index: 99;
+      z-index: 95;
           
   }
   /*
