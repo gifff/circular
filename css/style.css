@@ -495,7 +495,7 @@ hr.style-four {
       width: 100%;
   }
   .player-minimize {
-      z-index: 98 !important;
+      z-index: 98;
   }
   .player-minimize .player-position {
       background-color: white;
@@ -506,10 +506,13 @@ hr.style-four {
       padding: 7px;
       position: fixed;
       width: 300px;
+      z-index: 99;
+      
+      /*z-index: 1000;*/
   }
     #player, .player-container{
-        border-radius: 10px;
-      
+          border-radius: 10px;
+      z-index: 99;
           
   }
   /*
