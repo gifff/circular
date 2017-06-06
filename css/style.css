@@ -615,6 +615,9 @@ overrides for developer site defaults (for presentation only, non-demo styles)
       .button {
           display: block;
       }
+      #imageData {
+          display: none;
+      }
   }
 
   .show {
