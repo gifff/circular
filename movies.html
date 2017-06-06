@@ -89,7 +89,7 @@
                 <div class="column-large-11 column-medium-11 column-small-11">
                 <div class="row">
                     <div class="column-large-8 column-medium-8 column-small-12">
-                    <div class="feed">
+                    <div class="">
                         Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark forces bent on destroying reality. Before long, <br>Strange is forced to choose between his life of fortune and status or leave it all behind to defend the world as the most powerful sorcerer in existence.
                     </div>
                     </div>
@@ -159,7 +159,7 @@ playerInstance.on('ready', function() {
         // this prevents container from disappearing and changing element positions
         // on page when player becomes minimized. this also leaves a nice visual
         // placeholder space for minimized player to return to when appropriate
-        // playerContainerEl.style.height = playerHeight + 'px';
+        playerContainerEl.style.height = playerHeight + 'px';
 
         // below we handle window scroll event without killing performance
         // this is a minimal approach. please consider implementing something more extensive:
