@@ -486,7 +486,16 @@ hr.style-four {
       margin: 20px 20px 10px 0;
       width: 100%;
   }
+  #player {
+          border-radius: 10px,
 
+  }
+  .player-container2 {
+      background-color: black;
+      float: left;
+      margin: 20px 20px 10px 0;
+      width: 100%;
+  }
   .player-minimize .player-position {
       background-color: white;
       border-radius: 2px;
