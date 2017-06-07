@@ -498,14 +498,12 @@ hr.style-four {
       z-index: 95;
   }
   .player-minimize .player-position {
-      background-color: white;
       border-radius: 2px;
       bottom: 20px;
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
       right: 20px;
       padding: 7px;
       position: fixed;
-      width: 300px;
+      width: 400px;
       z-index: 95;
       
       /*z-index: 1000;*/
