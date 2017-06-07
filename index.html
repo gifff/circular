@@ -63,23 +63,23 @@
         <div class="column-large-7 column-medium-7 column-small-12 column-offset-3">
             <div class="filkom-grid">
                 <div class="row">
-                            <div class="column-large-2 column-medium-2 column-small-2 postProfileRe">
-                                <img src="media/profile.jpg">
-                            </div>
-                        <div class="column-large-12 column-medium-12 column-small-12">
-                            <div class="post-home">
-                                <input type="text" name="search" placeholder="What's new?'">
-                            </div>
+                    <div class="column-large-2 column-medium-2 column-small-2 postProfileRe">
+                        <img src="media/profile.jpg">
+                    </div>
+                    <div class="column-large-12 column-medium-12 column-small-12">
+                        <div class="post-home">
+                            <input type="text" name="search" placeholder="What's new?'">
                         </div>
-                        <div class="column-offset-11 column-large-1 column-medium-1 column-small-1 postBox">
-                                <div class="box">
-                                    <a href="#" id="postButton">
+                    </div>
+                    <div class="column-offset-11 column-large-1 column-medium-1 column-small-1 postBox">
+                        <div class="box">
+                            <a href="#" id="postButton">
                                         <i class="fa fa-inverse fa-paper-plane" aria-hidden="true"></i>
                                     </a>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
                 </div>
-                 <div class="row spacePost">
+                <div class="row spacePost">
                     <div class="row equal">
                         <div class="column-large-1 column-medium-1 column-small-1 postProfileHome">
                             <img src="picture/img.jpg">
@@ -98,19 +98,19 @@
                     </div>
 
                     <div class="column-large-10 column-medium-10 column-small-10 column-offset-1 commentContainer">
-                       <hr class="style-four">
-                            <div class="likebar">
-                                <img class="img-button" src="media/like.png">
-                                <div class="statusText"> Post Malone and 54 others</div>
-                            </div>
-                       <hr class="style-four">
-                       <div class="column-large-11 column-medium-11 column-small-11">
-                        <div class="input-top">
-                            <input type="text" name="search" placeholder="Write on Comment...">
+                        <hr class="style-four">
+                        <div class="likebar">
+                            <img class="img-button" src="media/like.png">
+                            <div class="statusText"> Post Malone and 54 others</div>
                         </div>
-                       </div>
-                       
-                            
+                        <hr class="style-four">
+                        <div class="column-large-11 column-medium-11 column-small-11">
+                            <div class="input-top">
+                                <input type="text" name="search" placeholder="Write on Comment...">
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
@@ -129,24 +129,24 @@
                     </div>
 
                     <div class="column-large-10 column-medium-10 column-small-10 column-offset-1 commentContainer">
-                       <hr class="style-four">
-                            <div class="likebar">
-                                <img class="img-button" src="media/like.png">
-                                <div class="statusText"> Agastya Darma and 23 others</div>
-                            </div>
-                       <hr class="style-four">
-                       <div class="column-large-11 column-medium-11 column-small-11">
-                        <div class="input-top">
-                            <input type="text" name="search" placeholder="Write on Comment...">
+                        <hr class="style-four">
+                        <div class="likebar">
+                            <img class="img-button" src="media/like.png">
+                            <div class="statusText"> Agastya Darma and 23 others</div>
                         </div>
-                       </div>
-                       
-                            
+                        <hr class="style-four">
+                        <div class="column-large-11 column-medium-11 column-small-11">
+                            <div class="input-top">
+                                <input type="text" name="search" placeholder="Write on Comment...">
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
 
-                
+
                 <div class="row spacePost">
                     <div class="row equal">
                         <div class="column-large-1 column-medium-1 column-small-1 postProfileHome">
@@ -162,19 +162,19 @@
                     </div>
 
                     <div class="column-large-10 column-medium-10 column-small-10 column-offset-1 commentContainer">
-                       <hr class="style-four">
-                            <div class="likebar">
-                                <img class="img-button" src="media/like.png">
-                                <div class="statusText"> Agastya Darma and 54 others</div>
-                            </div>
-                       <hr class="style-four">
-                       <div class="column-large-11 column-medium-11 column-small-11">
-                        <div class="input-top">
-                            <input type="text" name="search" placeholder="Write on Comment...">
+                        <hr class="style-four">
+                        <div class="likebar">
+                            <img class="img-button" src="media/like.png">
+                            <div class="statusText"> Agastya Darma and 54 others</div>
                         </div>
-                       </div>
-                       
-                            
+                        <hr class="style-four">
+                        <div class="column-large-11 column-medium-11 column-small-11">
+                            <div class="input-top">
+                                <input type="text" name="search" placeholder="Write on Comment...">
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
@@ -184,44 +184,43 @@
 </body>
 
 <script src="http://content.jwplatform.com/libraries/02g7r6G0.js"></script>
-        <script type="text/javascript">
+<script type="text/javascript">
+    // initialize jwplayer
+    var playerInstance = jwplayer('player');
 
-// initialize jwplayer
-var playerInstance = jwplayer('player');
+    // player dom elements
+    var playerContainerEl = document.querySelector('.player-container');
 
-// player dom elements
-var playerContainerEl = document.querySelector('.player-container');
+    // returns video player position from top of document
+    function getElementOffsetTop(el) {
+        var boundingClientRect = el.getBoundingClientRect();
+        var bodyEl = document.body;
+        var docEl = document.documentElement;
+        var scrollTop = window.pageYOffset || docEl.scrollTop || bodyEl.scrollTop;
+        var clientTop = docEl.clientTop || bodyEl.clientTop || 0;
+        return Math.round(boundingClientRect.top + scrollTop - clientTop);
+    }
 
-// returns video player position from top of document
-function getElementOffsetTop(el) {
-  var boundingClientRect = el.getBoundingClientRect();
-  var bodyEl = document.body;
-  var docEl = document.documentElement;
-  var scrollTop = window.pageYOffset || docEl.scrollTop || bodyEl.scrollTop;
-  var clientTop = docEl.clientTop || bodyEl.clientTop || 0;
-  return Math.round(boundingClientRect.top + scrollTop - clientTop);
-}
+    // returns the current y scroll position
+    function getScrollTop() {
+        var docEl = document.documentElement;
+        return (window.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
+    }
 
-// returns the current y scroll position
-function getScrollTop() {
-  var docEl = document.documentElement;
-  return (window.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
-}
+    // configure jwplayer instance
+    playerInstance.setup({
+        autostart: false,
+        file: 'https://www.youtube.com/watch?v=SC4xMk98Pdc',
+        primary: 'html5',
+        setFullscreen: true,
+        skin: {
+            name: "roundster"
+        }
+        //   width: '100%'
+    });
 
-// configure jwplayer instance
-playerInstance.setup({
-  autostart: false,
-  file: 'https://www.youtube.com/watch?v=SC4xMk98Pdc',
-  primary: 'html5',
-  setFullscreen: true,
-  skin: {
-  name: "roundster"
-  }
-//   width: '100%'
-});
-
-// when jwplayer instance is ready
-playerInstance.on('ready', function() {
+    // when jwplayer instance is ready
+    playerInstance.on('ready', function () {
         var config = playerInstance.getConfig();
         var utils = playerInstance.utils;
         // get height of player element
@@ -256,7 +255,7 @@ playerInstance.on('ready', function() {
         var isScrollTimeout = false;
 
         // window onscroll event handler
-        window.onscroll = function() {
+        window.onscroll = function () {
             // skip if we're waiting on a scroll update timeout to finish
             if (isScrollTimeout) return;
             // flag that a new timeout will begin
@@ -264,7 +263,7 @@ playerInstance.on('ready', function() {
             // otherwise, call scroll event view handler
             onScrollViewHandler();
             // set new timeout
-            setTimeout(function() {
+            setTimeout(function () {
                 // reset timeout flag to false (no longer waiting)
                 isScrollTimeout = false;
             }, 80);
@@ -272,6 +271,7 @@ playerInstance.on('ready', function() {
         };
 
     });
+
 </script>
 
 </html>
